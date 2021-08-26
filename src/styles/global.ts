@@ -12,17 +12,21 @@ const Css = css`
     text-decoration: none;
   }
 
-  body,
   input,
   select,
   textarea,
   button {
     font: 400 1rem 'Rowdies', cursive;
+    :focus {
+      outline: none;
+    }
   }
 
   body {
     width: 100vw;
     height: 100vh;
+
+    font: 400 1rem 'Rowdies', cursive;
 
     background-color: ${props => props.theme.colors.background};
 
