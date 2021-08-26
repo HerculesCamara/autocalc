@@ -1,25 +1,26 @@
+import Prismic from '@prismicio/client'
 import type { GetStaticProps, NextPage } from 'next'
+import { RichText } from 'prismic-dom'
+
+import { MathFormatter } from '../components/MathFormatter'
+import { getPrismicCLient } from '../services/prismic'
 import styles from '../styles/Home.module.css'
 
-import { MathFormatter } from '../components/MathFormatter';
-import { getPrismicCLient } from '../services/prismic';
-
-import Prismic from '@prismicio/client'
-import { RichText } from 'prismic-dom';
-
 interface HomeProps {
-  posts: [{
-    slug: string;
-    title: string;
-    content: string
-  }]
+  posts: [
+    {
+      slug: string
+      title: string
+      content: string
+    }
+  ]
 }
 
 const Home: NextPage<HomeProps> = ({ posts }) => {
-  const mathCode = posts[0].content.split('#math').pop()?.split('#endmath')[0] || ""
+  const mathCode =
+    posts[0].content.split('#math').pop()?.split('#endmath')[0] || ''
 
-  console.log(mathCode);
-
+  console.log(mathCode)
 
   return (
     <div className={styles.container}>
@@ -30,12 +31,13 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await getPrismicCLient().query([
-    Prismic.predicates.at('document.type', 'posts')
-  ], {
-    fetch: ['posts.title', 'posts.content'],
-    pageSize: 100
-  })
+  const response = await getPrismicCLient().query(
+    [Prismic.predicates.at('document.type', 'posts')],
+    {
+      fetch: ['posts.title', 'posts.content'],
+      pageSize: 100
+    }
+  )
 
   const posts = response.results.map(post => {
     return {
@@ -44,8 +46,6 @@ export const getStaticProps: GetStaticProps = async () => {
       content: RichText.asText(post.data.content)
     }
   })
-
-
 
   return {
     props: {
