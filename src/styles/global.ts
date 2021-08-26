@@ -27,6 +27,8 @@ const Css = css`
 
     width: 100vw;
     height: 100vh;
+
+    background-color: ${props => props.theme.colors.background};
   }
 
   button {
