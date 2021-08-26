@@ -21,14 +21,18 @@ const Css = css`
   }
 
   body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 100vw;
     height: 100vh;
 
     background-color: ${props => props.theme.colors.background};
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   button {
