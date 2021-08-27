@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 12px;
+  padding: 15px;
   gap: 4rem;
   position: relative;
 

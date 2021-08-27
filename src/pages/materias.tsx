@@ -1,12 +1,16 @@
 import { NextPage } from 'next'
 
+import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
 
 const Materias: NextPage = () => {
   return (
-    <main>
-      <MainCard>OPA</MainCard>
-    </main>
+    <>
+      <Header />
+      <main>
+        <MainCard>OPA</MainCard>
+      </main>
+    </>
   )
 }
 
