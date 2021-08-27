@@ -32,6 +32,8 @@ const Css = css`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      padding: 12px;
     }
   }
 

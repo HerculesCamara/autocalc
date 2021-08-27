@@ -17,10 +17,15 @@ export const HomeContainer = styled.div`
   .input {
     width: 50%;
     height: 4rem;
+    min-width: 380px;
+
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
     border: 1px solid #c4c4c4;
     border-radius: 50px;
+
     padding: 0.4rem 0.5rem 0.5rem 1.5rem;
 
     input {
@@ -55,6 +60,18 @@ export const HomeContainer = styled.div`
       color: ${props => props.theme.colors.grayMedium};
       bottom: 20px;
       text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .input {
+      width: 100%;
+      min-width: auto;
+
+      button {
+        width: 39px;
+        height: 39px;
+      }
     }
   }
 `
