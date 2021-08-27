@@ -23,8 +23,9 @@ const Css = css`
   }
 
   body {
+    overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     font: 400 1rem 'Rowdies', cursive;
 

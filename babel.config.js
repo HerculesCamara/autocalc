@@ -6,8 +6,7 @@ module.exports = {
       {
         ssr: true,
         fileName: false,
-        displayName: false,
-        namespace: 'sinalize-css'
+        displayName: false
       }
     ]
   ]

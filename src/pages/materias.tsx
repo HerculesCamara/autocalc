@@ -1,18 +1,16 @@
 import { getCategories } from '@services/prismic'
 import { GetStaticProps, NextPage } from 'next'
-import Image from 'next/image'
 
+import { Card } from '@components/Card'
 import { MainCard } from '@components/MainCard'
+
+import { CardsContainer } from '@styles/pages/materias'
 
 type CategoryType = {
   id: string
   slug: string | undefined
   title: string
-  icon: {
-    dimensions: { width: number; height: number }
-    alt: string
-    url: string
-  }
+  icon: string
 }
 
 interface MateriasProps {
@@ -22,16 +20,48 @@ const Materias: NextPage<MateriasProps> = ({ categories }) => {
   return (
     <main>
       <MainCard>
-        {categories.map(category => (
-          <div key={category.id}>
-            {category.title}
-            <Image
-              src={category.icon.url}
-              width={category.icon.dimensions.width}
-              height={category.icon.dimensions.height}
-            />
-          </div>
-        ))}
+        <CardsContainer>
+          {categories.map(category => (
+            <Card key={category.id}>
+              <div
+                className="icon"
+                dangerouslySetInnerHTML={{ __html: category.icon }}
+              ></div>
+
+              <h4>{category.title}</h4>
+            </Card>
+          ))}
+          {categories.map(category => (
+            <Card key={category.id}>
+              <div
+                className="icon"
+                dangerouslySetInnerHTML={{ __html: category.icon }}
+              ></div>
+
+              <h4>{category.title}</h4>
+            </Card>
+          ))}
+          {categories.map(category => (
+            <Card key={category.id}>
+              <div
+                className="icon"
+                dangerouslySetInnerHTML={{ __html: category.icon }}
+              ></div>
+
+              <h4>{category.title}</h4>
+            </Card>
+          ))}
+          {categories.map(category => (
+            <Card key={category.id}>
+              <div
+                className="icon"
+                dangerouslySetInnerHTML={{ __html: category.icon }}
+              ></div>
+
+              <h4>{category.title}</h4>
+            </Card>
+          ))}
+        </CardsContainer>
       </MainCard>
     </main>
   )

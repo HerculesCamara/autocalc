@@ -4,11 +4,7 @@ type CategoryType = {
   id: string
   slug: string | undefined
   title: string
-  icon: {
-    dimensions: { width: number; height: number }
-    alt: string
-    url: string
-  }
+  icon: string
 }
 
 export function getPrismicCLient(req?: unknown) {
@@ -32,11 +28,7 @@ export async function getCategories(): Promise<CategoryType[]> {
     id: category.id,
     slug: category.uid,
     title: category.data.title[0].text as string,
-    icon: {
-      dimensions: category.data.icon.dimensions,
-      alt: category.data.icon.alt,
-      url: category.data.icon.url
-    }
+    icon: category.data.icon[0].text as string
   }))
 
   return categories
