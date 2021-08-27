@@ -11,6 +11,7 @@ export const HomeContainer = styled.div`
   position: relative;
 
   .img {
+    margin-top: auto;
     max-width: 320px;
   }
 
@@ -30,6 +31,7 @@ export const HomeContainer = styled.div`
 
     input {
       flex: 1;
+      max-width: 80%;
       border: none;
       ::placeholder {
         color: ${props => props.theme.colors.placeholder};
@@ -54,11 +56,11 @@ export const HomeContainer = styled.div`
   a {
     color: ${props => props.theme.colors.primary};
     margin-top: 1rem;
+
     :last-child {
+      margin-top: auto;
       font-family: 'Roboto', sans-serif;
-      position: absolute;
       color: ${props => props.theme.colors.grayMedium};
-      bottom: 20px;
       text-decoration: underline;
     }
   }
