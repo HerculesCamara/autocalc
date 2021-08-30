@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
   text-align: center;
   right: 0;
   left: 0;
-  position: fixed;
+
   bottom: 0;
-  padding: 1.2rem;
+  padding: 1.2rem 0.8rem;
 `

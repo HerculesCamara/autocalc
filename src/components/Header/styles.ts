@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  padding: 36px;
+
+  padding: 30px 12px 12px;
 
   .img {
     margin-top: auto;

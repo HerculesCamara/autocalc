@@ -2,6 +2,7 @@ import { getCategories } from '@services/prismic'
 import { GetStaticProps, NextPage } from 'next'
 
 import { Card } from '@components/Card'
+import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
 
 import { CardsContainer } from '@styles/pages/materias'
@@ -18,52 +19,55 @@ interface MateriasProps {
 }
 const Materias: NextPage<MateriasProps> = ({ categories }) => {
   return (
-    <main>
-      <MainCard>
-        <CardsContainer>
-          {categories.map(category => (
-            <Card key={category.id}>
-              <div
-                className="icon"
-                dangerouslySetInnerHTML={{ __html: category.icon }}
-              ></div>
+    <>
+      <Header />
+      <main>
+        <MainCard>
+          <CardsContainer>
+            {categories.map(category => (
+              <Card key={category.id}>
+                <div
+                  className="icon"
+                  dangerouslySetInnerHTML={{ __html: category.icon }}
+                ></div>
 
-              <h4>{category.title}</h4>
-            </Card>
-          ))}
-          {categories.map(category => (
-            <Card key={category.id}>
-              <div
-                className="icon"
-                dangerouslySetInnerHTML={{ __html: category.icon }}
-              ></div>
+                <h4>{category.title}</h4>
+              </Card>
+            ))}
+            {categories.map(category => (
+              <Card key={category.id}>
+                <div
+                  className="icon"
+                  dangerouslySetInnerHTML={{ __html: category.icon }}
+                ></div>
 
-              <h4>{category.title}</h4>
-            </Card>
-          ))}
-          {categories.map(category => (
-            <Card key={category.id}>
-              <div
-                className="icon"
-                dangerouslySetInnerHTML={{ __html: category.icon }}
-              ></div>
+                <h4>{category.title}</h4>
+              </Card>
+            ))}
+            {categories.map(category => (
+              <Card key={category.id}>
+                <div
+                  className="icon"
+                  dangerouslySetInnerHTML={{ __html: category.icon }}
+                ></div>
 
-              <h4>{category.title}</h4>
-            </Card>
-          ))}
-          {categories.map(category => (
-            <Card key={category.id}>
-              <div
-                className="icon"
-                dangerouslySetInnerHTML={{ __html: category.icon }}
-              ></div>
+                <h4>{category.title}</h4>
+              </Card>
+            ))}
+            {categories.map(category => (
+              <Card key={category.id}>
+                <div
+                  className="icon"
+                  dangerouslySetInnerHTML={{ __html: category.icon }}
+                ></div>
 
-              <h4>{category.title}</h4>
-            </Card>
-          ))}
-        </CardsContainer>
-      </MainCard>
-    </main>
+                <h4>{category.title}</h4>
+              </Card>
+            ))}
+          </CardsContainer>
+        </MainCard>
+      </main>
+    </>
   )
 }
 

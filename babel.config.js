@@ -4,7 +4,7 @@ module.exports = {
     [
       'styled-components',
       {
-        ssr: true,
+        ssr: false,
         fileName: false,
         displayName: false
       }

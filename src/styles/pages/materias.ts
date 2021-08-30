@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
   align-items: center;
   justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  flex-wrap: wrap;
+  grid-auto-rows: auto;
+  padding: 0 2rem;
 
-  padding: 0 5rem;
+  overflow-y: auto;
 `

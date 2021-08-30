@@ -23,23 +23,25 @@ const Css = css`
   }
 
   body {
-    overflow-x: hidden;
-    width: 100vw;
-    min-height: 100vh;
-
     font: 400 1rem 'Rowdies', cursive;
 
     background-color: ${props => props.theme.colors.background};
 
     main {
-      width: 100vw;
-      height: 100vh;
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
 
       padding: 12px;
     }
+  }
+
+  #__next {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
   }
 
   button {
