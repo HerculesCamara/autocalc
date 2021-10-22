@@ -11,10 +11,13 @@ export const CardContainer = styled.section`
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 
   width: 60%;
-  padding: 12px;
+
+  top: 0;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1600px) {
     width: 80%;

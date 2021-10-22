@@ -7,10 +7,15 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
 
-  padding: 30px 12px 12px;
+  padding: 1% 12px 12px;
 
   .img {
-    margin-top: auto;
     max-width: 320px;
+  }
+
+  @media (min-width: 768px) {
+    .img {
+      max-width: 260px;
+    }
   }
 `

@@ -4,6 +4,8 @@ import { GetStaticProps, NextPage } from 'next'
 import { Card } from '@components/Card'
 import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
+import { PathUser } from '@components/PathUser'
+import { SearchBar } from '@components/SearchBar'
 
 import { CardsContainer } from '@styles/pages/materias'
 
@@ -23,6 +25,8 @@ const Materias: NextPage<MateriasProps> = ({ categories }) => {
       <Header />
       <main>
         <MainCard>
+          <PathUser />
+          <SearchBar />
           <CardsContainer>
             {categories.map(category => (
               <Card key={category.id}>

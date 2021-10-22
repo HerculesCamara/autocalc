@@ -8,7 +8,6 @@ export const CardContainer = styled.div`
   width: 10rem;
   height: 10.5rem;
 
-  gap: 1.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,7 +15,7 @@ export const CardContainer = styled.div`
   justify-self: center;
 
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
 
   h4 {
     color: ${props => props.theme.colors.grayMedium};
@@ -29,5 +28,14 @@ export const CardContainer = styled.div`
     justify-content: center;
 
     max-width: 40%;
+  }
+
+  @media (max-height: 800px) {
+    width: 9rem;
+    height: 9.5rem;
+
+    h4 {
+      font-size: 1rem;
+    }
   }
 `

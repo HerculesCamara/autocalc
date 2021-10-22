@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
-  width: 100%;
+  width: 75%;
   display: grid;
   align-items: center;
   justify-content: space-evenly;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(4, 2fr);
   flex-wrap: wrap;
   grid-auto-rows: auto;
   padding: 0 2rem;

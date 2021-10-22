@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   color: ${props => props.theme.colors.grayMedium};
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   right: 0;
