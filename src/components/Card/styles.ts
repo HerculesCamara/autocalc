@@ -34,6 +34,10 @@ export const CardContainer = styled.button`
     justify-content: center;
 
     max-width: 40%;
+
+    svg {
+      fill: #8a8a8a;
+    }
   }
 
   &:hover {
@@ -44,11 +48,9 @@ export const CardContainer = styled.button`
     }
 
     .icon {
-      fill: ${props => props.theme.colors.primary};
-    }
-
-    svg {
-      fill: ${props => props.theme.colors.primary};
+      svg {
+        fill: ${props => props.theme.colors.primary};
+      }
     }
   }
 

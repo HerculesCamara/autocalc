@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CardContainer = styled.section`
   width: 60%;
   max-width: 1328px;
-  max-height: 756px;
+  max-height: auto;
 
   background-color: #fff;
   border-radius: 1rem;

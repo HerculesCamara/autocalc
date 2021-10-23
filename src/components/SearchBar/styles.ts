@@ -41,7 +41,7 @@ export const SearchBarContent = styled.div`
     transition: filter 0.2s;
 
     &:hover {
-      filter: brightness(0.9);
+      filter: brightness(0.7);
     }
   }
 `

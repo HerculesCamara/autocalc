@@ -38,36 +38,6 @@ const Materias: NextPage<MateriasProps> = ({ categories }) => {
                 <h4>{category.title}</h4>
               </Card>
             ))}
-            {categories.map(category => (
-              <Card key={category.id}>
-                <div
-                  className="icon"
-                  dangerouslySetInnerHTML={{ __html: category.icon }}
-                ></div>
-
-                <h4>{category.title}</h4>
-              </Card>
-            ))}
-            {categories.map(category => (
-              <Card key={category.id}>
-                <div
-                  className="icon"
-                  dangerouslySetInnerHTML={{ __html: category.icon }}
-                ></div>
-
-                <h4>{category.title}</h4>
-              </Card>
-            ))}
-            {categories.map(category => (
-              <Card key={category.id}>
-                <div
-                  className="icon"
-                  dangerouslySetInnerHTML={{ __html: category.icon }}
-                ></div>
-
-                <h4>{category.title}</h4>
-              </Card>
-            ))}
           </CardsContainer>
         </MainCard>
       </main>
