@@ -4,6 +4,7 @@ import { GetStaticProps, NextPage } from 'next'
 import { Card } from '@components/Card'
 import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
+import { Paginator } from '@components/Paginator'
 import { PathUser } from '@components/PathUser'
 import { SearchBar } from '@components/SearchBar'
 
@@ -39,6 +40,7 @@ const Materias: NextPage<MateriasProps> = ({ categories }) => {
               </Card>
             ))}
           </CardsContainer>
+          <Paginator />
         </MainCard>
       </main>
     </>

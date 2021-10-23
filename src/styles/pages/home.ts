@@ -34,6 +34,9 @@ export const HomeContainer = styled.div`
       flex: 1;
       max-width: 80%;
       border: none;
+
+      color: ${props => props.theme.colors.grayDark};
+
       ::placeholder {
         color: ${props => props.theme.colors.placeholder};
       }

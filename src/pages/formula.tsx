@@ -1,10 +1,13 @@
 import { getPost } from '@services/prismic'
 import { GetStaticProps, NextPage } from 'next'
-import Link from 'next/link'
+import React from 'react'
 
+import { BackBtt } from '@components/BackBtt'
 import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
 import { PathUser } from '@components/PathUser'
+
+import { PostContent } from '@styles/pages/formula'
 
 interface FormulaProps {
   post: {
@@ -23,9 +26,14 @@ const Formula: NextPage<FormulaProps> = ({ post }) => {
       <main>
         <MainCard>
           <PathUser />
-          <h1>{post.title}</h1>
-          <Link href={'/'}>{post.categoryLink}</Link>
-          <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+          <BackBtt />
+          <PostContent>
+            <h1>{post.title}</h1>
+            {/* <Link href={'/'}>{post.categoryLink}</Link> */}
+            <article
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            ></article>
+          </PostContent>
         </MainCard>
       </main>
     </>

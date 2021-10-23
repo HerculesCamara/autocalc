@@ -4,6 +4,7 @@ const lightTheme = {
     primary: '#ff1616',
     white: '#fff',
     back: '#000',
+    grayText: '#757575',
     grayDark: '#545454',
     grayMedium: '#8A8A8A',
     grayLight: '#b2b1b1',

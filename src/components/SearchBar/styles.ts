@@ -15,7 +15,7 @@ export const SearchBarContent = styled.div`
     border-bottom: 1px solid;
     border-color: ${props => props.theme.colors.grayLight};
 
-    color: ${props => props.theme.colors.grayMedium};
+    color: ${props => props.theme.colors.grayDark};
     text-align: right;
 
     margin-bottom: 1rem;
