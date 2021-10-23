@@ -1,16 +1,14 @@
 import styled from 'styled-components'
 
 export const CardContainer = styled.section`
+  width: 60%;
   max-width: 1328px;
-  min-height: 560px;
-  max-height: 665px;
+  max-height: 756px;
 
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 1rem;
 
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-
-  width: 60%;
 
   top: 0;
 

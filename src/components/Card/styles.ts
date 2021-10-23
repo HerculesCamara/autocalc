@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.button`
   background-color: ${props => props.theme.colors.cardBackground};
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
+  border: solid 1px;
+  border-color: ${props => props.theme.colors.grayLightBorderCard};
 
   width: 10rem;
   height: 10.5rem;
+  padding: 1rem;
 
   display: flex;
   align-items: center;
@@ -14,12 +17,15 @@ export const CardContainer = styled.div`
   justify-content: center;
   justify-self: center;
 
-  padding: 1rem;
   margin: 1rem;
+
+  transition: all 0.2s;
 
   h4 {
     color: ${props => props.theme.colors.grayMedium};
     font-size: 1.15rem;
+    font-weight: 400;
+    margin: 0.5rem;
   }
 
   .icon {
@@ -28,6 +34,22 @@ export const CardContainer = styled.div`
     justify-content: center;
 
     max-width: 40%;
+  }
+
+  &:hover {
+    border-color: ${props => props.theme.colors.placeholder};
+
+    h4 {
+      color: ${props => props.theme.colors.primary};
+    }
+
+    .icon {
+      fill: ${props => props.theme.colors.primary};
+    }
+
+    svg {
+      fill: ${props => props.theme.colors.primary};
+    }
   }
 
   @media (max-height: 800px) {

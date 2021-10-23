@@ -9,7 +9,7 @@ export const SearchBarContent = styled.div`
     width: 250px;
 
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
     border: 0;
     border-bottom: 1px solid;

@@ -7,6 +7,7 @@ const lightTheme = {
     grayDark: '#545454',
     grayMedium: '#8A8A8A',
     grayLight: '#b2b1b1',
+    grayLightBorderCard: '#efefef',
     background: '#F0F0F0',
     cardBackground: '#FDFDFD'
   }
