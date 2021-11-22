@@ -21,7 +21,7 @@ const Home: NextPage = () => {
               <FaSearch />
             </button>
           </div>
-          <a href="">Ver matérias</a>
+          <a href="/materias">Ver matérias</a>
           <a href="">O que é isso?</a>
         </HomeContainer>
       </HomeCard>

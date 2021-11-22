@@ -21,6 +21,6 @@ export const CardContainer = styled.section`
     width: 80%;
   }
   @media (max-width: 720px) {
-    width: 100%;
+    width: 98%;
   }
 `

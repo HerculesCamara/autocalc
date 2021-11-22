@@ -8,7 +8,7 @@ export function BackBtt() {
   return (
     <BackBttContent>
       <Image src={arrowImg} alt="Voltar" />
-      <label>Voltar</label>
+      <p>Voltar</p>
     </BackBttContent>
   )
 }

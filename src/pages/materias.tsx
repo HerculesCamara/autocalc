@@ -8,7 +8,7 @@ import { Paginator } from '@components/Paginator'
 import { PathUser } from '@components/PathUser'
 import { SearchBar } from '@components/SearchBar'
 
-import { CardsContainer } from '@styles/pages/materias'
+import { CardsContainer, MateriasContent } from '@styles/pages/materias'
 
 type CategoryType = {
   id: string
@@ -22,7 +22,7 @@ interface MateriasProps {
 }
 const Materias: NextPage<MateriasProps> = ({ categories }) => {
   return (
-    <>
+    <MateriasContent>
       <Header />
       <main>
         <MainCard>
@@ -43,7 +43,7 @@ const Materias: NextPage<MateriasProps> = ({ categories }) => {
           <Paginator />
         </MainCard>
       </main>
-    </>
+    </MateriasContent>
   )
 }
 

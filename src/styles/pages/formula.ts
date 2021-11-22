@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const FormulaContent = styled.div`
+  display: relative;
+`
+
 export const PostContent = styled.div`
   color: ${props => props.theme.colors.grayMedium};
   padding: 0rem 3rem;

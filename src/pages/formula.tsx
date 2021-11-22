@@ -7,7 +7,9 @@ import { Header } from '@components/Header'
 import { MainCard } from '@components/MainCard'
 import { PathUser } from '@components/PathUser'
 
-import { PostContent } from '@styles/pages/formula'
+import { useResize } from '@hooks/useResize'
+
+import { FormulaContent, PostContent } from '@styles/pages/formula'
 
 interface FormulaProps {
   post: {
@@ -20,20 +22,24 @@ interface FormulaProps {
 }
 
 const Formula: NextPage<FormulaProps> = ({ post }) => {
+  const { isMobile } = useResize()
+
   return (
     <>
       <Header />
       <main>
         <MainCard>
           <PathUser />
-          <BackBtt />
-          <PostContent>
-            <h1>{post.title}</h1>
-            {/* <Link href={'/'}>{post.categoryLink}</Link> */}
-            <article
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            ></article>
-          </PostContent>
+          <FormulaContent>
+            {!isMobile && <BackBtt />}
+            <PostContent>
+              <h1>{post.title}</h1>
+              {/* <Link href={'/'}>{post.categoryLink}</Link> */}
+              <article
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              ></article>
+            </PostContent>
+          </FormulaContent>
         </MainCard>
       </main>
     </>

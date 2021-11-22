@@ -4,7 +4,7 @@ export const PathUserContent = styled.div`
   width: 100%;
   padding: 0.7rem 1.5rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   border: 0;
   border-bottom: solid 1px;

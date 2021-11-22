@@ -62,4 +62,10 @@ export const CardContainer = styled.button`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 390px) {
+    width: 8.5rem;
+    height: 9rem;
+    margin: 0.7rem;
+  }
 `

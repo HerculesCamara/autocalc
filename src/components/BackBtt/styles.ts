@@ -9,16 +9,16 @@ export const BackBttContent = styled.button`
   border: 0;
 
   position: absolute;
+  z-index: 1;
+  margin-left: 3rem;
 
   display: flex;
-
-  transform: translate(-460px, -400px);
 
   justify-content: space-between;
 
   transition: filter 0.2s;
 
-  label {
+  p {
     margin-top: 0.3rem;
   }
 

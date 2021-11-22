@@ -2,20 +2,27 @@ import styled from 'styled-components'
 
 export const PaginatorContent = styled.section`
   display: flex;
-  padding: 1rem;
+  padding-bottom: 4rem;
 
-  div {
+  button {
     border: 0;
     border-radius: 10px;
-    width: 20px;
+    width: 15px;
+    height: 15px;
     background-color: ${props => props.theme.colors.grayLight};
 
-    .active {
+    margin: 0.5rem;
+
+    &.active {
       background-color: ${props => props.theme.colors.primary};
     }
 
     &:hover {
       background-color: ${props => props.theme.colors.placeholder};
+
+      &.active {
+        background-color: ${props => props.theme.colors.primary};
+      }
     }
   }
 `

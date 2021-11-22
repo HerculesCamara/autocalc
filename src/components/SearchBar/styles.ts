@@ -44,4 +44,10 @@ export const SearchBarContent = styled.div`
       filter: brightness(0.7);
     }
   }
+
+  @media (max-width: 450px) {
+    input {
+      width: 200px;
+    }
+  }
 `
