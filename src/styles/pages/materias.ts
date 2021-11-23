@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const MateriasContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  grid-template-columns: repeat(1fr, 1fr);
 
-  height: 100vh;
+  flex: 1;
 `
 
 export const CardsContainer = styled.div`
