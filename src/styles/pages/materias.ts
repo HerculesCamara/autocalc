@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const MateriasContent = styled.div`
   display: grid;
+  /* Confia pae */
   grid-template-columns: repeat(1fr, 1fr);
 
   flex: 1;

@@ -16,7 +16,7 @@ export const PostContent = styled.div`
     margin: 1rem;
 
     :last-child {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -37,5 +37,9 @@ export const PostContent = styled.div`
     margin-left: 1rem;
 
     text-decoration: underline 2px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0rem 1rem;
   }
 `
