@@ -63,6 +63,7 @@ export const SobreContainer = styled.div`
   width: 100%;
 
   padding: 3rem 23rem;
+  padding-bottom: 15rem;
 
   background: ${props => props.theme.colors.white};
 
@@ -100,6 +101,58 @@ export const SobreContainer = styled.div`
         font-weight: 300;
         color: ${props => props.theme.colors.grayText};
       }
+    }
+  }
+
+  section:nth-child(odd) {
+    .content {
+      text-align: right;
+    }
+  }
+
+  > p {
+    margin-top: -1.7rem;
+
+    font-size: 1.2rem;
+    color: ${props => props.theme.colors.grayText};
+  }
+
+  button {
+    width: 23rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    margin-top: 3.4rem;
+
+    font-size: 1.7rem;
+    color: ${props => props.theme.colors.white};
+
+    background-color: ${props => props.theme.colors.primary};
+
+    transition: 0.2s;
+
+    &:hover {
+      filter: opacity(0.7);
+    }
+  }
+`
+
+export const FooterSobre = styled.div`
+  width: 100%;
+
+  background-color: ${props => props.theme.colors.white};
+  .line {
+    background-color: ${props => props.theme.colors.grayLight};
+    width: 100%;
+    height: 1px;
+  }
+  .contentFooter {
+    padding: 3rem 23rem;
+    img {
+      width: 15rem;
+      cursor: pointer;
     }
   }
 `

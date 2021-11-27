@@ -1,8 +1,9 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaSearch } from 'react-icons/fa'
 
-import { HeaderSobre, SobreContainer } from '@styles/pages/sobre'
+import { FooterSobre, HeaderSobre, SobreContainer } from '@styles/pages/sobre'
 
 import illustration1 from '@assets/images/illustration1.svg'
 import illustration2 from '@assets/images/illustration2.svg'
@@ -61,7 +62,17 @@ const Sobre: NextPage = () => {
 
           <Image src={illustration3} />
         </section>
+        <p>“Todo dia é dia de recomeçar evoluir.”</p>
+        <button>Quero me candidatar</button>
       </SobreContainer>
+      <FooterSobre>
+        <div className="line"></div>
+        <div className="contentFooter">
+          <Link href="/">
+            <Image src={logoImg} alt="AutoCalc" />
+          </Link>
+        </div>
+      </FooterSobre>
     </>
   )
 }
