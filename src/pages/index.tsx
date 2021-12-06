@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             </button>
           </div>
           <a href="/materias">Ver matérias</a>
-          <a href="">O que é isso?</a>
+          <a href="/sobre">O que é isso?</a>
         </HomeContainer>
       </HomeCard>
     </main>
