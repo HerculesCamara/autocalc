@@ -8,6 +8,7 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "next/core-web-vitals",
     "standard",
     "next"
   ],
@@ -21,6 +22,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
+    "no-unused-vars": "error",
     "prettier/prettier": "error",
     "react/self-closing-comp": "warn",
     "react/prop-types": "off",
