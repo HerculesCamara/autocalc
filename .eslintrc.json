@@ -2,52 +2,38 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
-  "extends": ["standard", "eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "standard",
+    "next"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": 13,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "eslint-plugin-import-helpers",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
     "prettier/prettier": "error",
-    "space-before-function-paren": "off",
+    "react/self-closing-comp": "warn",
     "react/prop-types": "off",
-    "no-use-before-define": "off",
-    "camelcase": "off",
-    "multiline-ternary": "off",
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": [
-          "module",
-          "/^@components/",
-          "/^@settings/",
-          "/^@contexts/",
-          "/^@hooks/",
-          "/^@api/",
-          "/^@scripts/",
-          "/^@styles/",
-          "/^@json/",
-          "/^@assets/images/",
-          "/^@assets/json/",
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
+    "react/react-in-jsx-scope": "off",
+    "space-before-function-paren": "off"
+  },
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
