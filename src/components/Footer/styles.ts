@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FooterContainer = styled.footer`
+export const Wrapper = styled.footer`
   color: ${props => props.theme.colors.grayMedium};
   font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;

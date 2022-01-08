@@ -1,5 +1,5 @@
-import { FooterContainer } from './styles'
+import * as S from './styles'
 
-export function Footer() {
-  return <FooterContainer>Todos os direitos reservados</FooterContainer>
-}
+const Footer = () => <S.Wrapper>Todos os direitos reservados</S.Wrapper>
+
+export default Footer

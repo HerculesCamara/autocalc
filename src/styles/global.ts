@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
 
-const Css = css`
+const GlobalStyles = createGlobalStyle`${css`
   * {
     margin: 0;
     padding: 0;
@@ -58,7 +58,6 @@ const Css = css`
       font-size: 87.5%;
     }
   }
-`
-const GlobalStyles = createGlobalStyle`${Css}`
+`}`
 
 export default GlobalStyles
