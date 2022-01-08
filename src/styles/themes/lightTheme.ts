@@ -1,4 +1,5 @@
 const lightTheme = {
+  isMobile: undefined,
   colors: {
     placeholder: '#ff7171',
     primary: '#ff1616',
