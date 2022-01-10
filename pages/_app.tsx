@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '@/styles/global'
 import lightTheme from '@/styles/themes/lightTheme'
 import { useCheckDevice } from '@/hooks/useCheckDevice'
+import LoadingScreen from '@/components/LoadingScreen'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { isMobile } = useCheckDevice()
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <Component {...pageProps} />
       <GlobalStyles />
+      <LoadingScreen />
     </ThemeProvider>
   )
 }
