@@ -3,6 +3,9 @@ import styled, { css } from 'styled-components'
 
 import LogoSvg from '@/assets/logo.svg'
 import SearchSvg from '@/assets/search.svg'
+import Section1Svg from '@/assets/about-us1.svg'
+import Section2Svg from '@/assets/about-us2.svg'
+import Section3Svg from '@/assets/about-us3.svg'
 
 export const Wrapper = Fragment
 
@@ -12,7 +15,7 @@ export const Header = styled.header`
       width: 100%;
       height: 12.5rem;
 
-      background: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.background};
 
       display: flex;
       flex-direction: column;
@@ -51,6 +54,9 @@ export const SearchBar = styled.div`
     const Mobile = css`
       width: auto;
       position: relative;
+
+      display: flex;
+      align-items: center;
     `
 
     const Desktop = css`
@@ -95,11 +101,18 @@ export const BttSearchBar = styled.button`
       width: 2.25rem;
       height: 2.25rem;
       border: none;
-      border-radius: 1rem;
-
-      right: 0;
+      border-radius: 3rem;
 
       position: absolute;
+
+      right: 0;
+      margin-right: 0.35rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: ${({ theme }) => theme.colors.primary};
     `
 
     const Desktop = css`
@@ -112,9 +125,161 @@ export const BttSearchBar = styled.button`
 
 export const SearchImg = styled(SearchSvg)`
   ${({ theme }) => {
-    const Mobile = css`
-      width: 1rem;
+    const Mobile = css``
+
+    const Desktop = css`
+      width: 24rem;
     `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const Container = styled.div`
+  ${({ theme }) => {
+    const Mobile = css`
+      width: 100%;
+
+      background: ${({ theme }) => theme.colors.white};
+
+      padding: 0 3rem;
+      padding-top: 1.5rem;
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const Title = styled.h1`
+  ${({ theme }) => {
+    const Mobile = css`
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: ${({ theme }) => theme.colors.grayMedium};
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const Section = styled.section`
+  ${({ theme }) => {
+    const Mobile = css`
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0 0.5rem;
+
+      :first-of-type {
+        margin-top: 2.75rem;
+      }
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const SectionTitle = styled.h2`
+  ${({ theme }) => {
+    const Mobile = css`
+      font-size: 1.875rem;
+      font-weight: 400;
+      color: ${({ theme }) => theme.colors.primary};
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const p = styled.p`
+  ${({ theme }) => {
+    const Mobile = css`
+      margin-top: 0.5rem;
+
+      font-size: 1.25rem;
+      font-weight: 300;
+      text-align: center;
+      color: ${({ theme }) => theme.colors.grayText};
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const hr = styled.hr`
+  ${({ theme }) => {
+    const Mobile = css`
+      width: 10rem;
+      height: 1px;
+      background: ${({ theme }) => theme.colors.grayLight};
+
+      border: none;
+
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const Section1Img = styled(Section1Svg)`
+  ${({ theme }) => {
+    const Mobile = css`
+      margin-top: 0.7rem;
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+
+export const Section2Img = styled(Section2Svg)`
+  ${({ theme }) => {
+    const Mobile = css`
+      margin-top: 0.7rem;
+    `
+
+    const Desktop = css`
+      width: 24rem;
+    `
+
+    return theme.isMobile ? Mobile : Desktop
+  }}
+`
+export const Section3Img = styled(Section3Svg)`
+  ${({ theme }) => {
+    const Mobile = css``
 
     const Desktop = css`
       width: 24rem;
