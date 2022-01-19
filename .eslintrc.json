@@ -9,8 +9,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "next/core-web-vitals",
-    "standard",
-    "next"
+    "standard"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -20,14 +19,15 @@
     "ecmaVersion": 13,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "no-unused-vars": "error",
     "prettier/prettier": "error",
     "react/self-closing-comp": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "import/no-duplicates": "off"
   },
 
   "settings": {

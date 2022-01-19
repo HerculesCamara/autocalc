@@ -36,8 +36,8 @@ const AboutPage = () => {
           <S.TextSection>
             <S.SectionTitle>O que fazemos?</S.SectionTitle>
             <S.p>
-              Aqui te apresentamos as fórmulas matemáticas de forma amigável para
-              facilitar e clarificar o seu entendimento e estudo.
+              Aqui te apresentamos as fórmulas matemáticas de forma amigável
+              para facilitar e clarificar o seu entendimento e estudo.
             </S.p>
           </S.TextSection>
 
@@ -53,9 +53,11 @@ const AboutPage = () => {
               mais atuais tecnologias e ferramentas do mercado. Ganhe e
               compartilhe conhecimento e experiências.
             </S.p>
-            <S.CulturalText>“Todo dia é dia de recomeçar evoluir.”</S.CulturalText>
+            <S.CulturalText>
+              “Todo dia é dia de recomeçar evoluir.”
+            </S.CulturalText>
           </S.TextSection>
-          
+
           <S.Section3Img />
         </S.Section>
 
@@ -73,14 +75,14 @@ const AboutPage = () => {
           <S.FooterPages>TRABALHE CONOSCO</S.FooterPages>
         </S.FooterPagesWrapper>
 
-        <S.hr/>
+        <S.hr />
 
         <S.FooterSocialMediasWrapper>
           <S.SpanFooterSocialMedias>Siga-nos</S.SpanFooterSocialMedias>
           <S.FooterSocialMedias>
-            <S.InstaLogoImg/>
-            <S.LinkedinLogoImg/>
-            <S.YoutubeLogoImg/>
+            <S.InstaLogoImg />
+            <S.LinkedinLogoImg />
+            <S.YoutubeLogoImg />
           </S.FooterSocialMedias>
         </S.FooterSocialMediasWrapper>
       </S.Footer>

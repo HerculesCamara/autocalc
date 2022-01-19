@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import styled, { css } from 'styled-components'
 
 import LogoSvg from '@/assets/logo.svg'
@@ -6,9 +5,8 @@ import SearchSvg from '@/assets/search.svg'
 import Section1Svg from '@/assets/about-us1.svg'
 import Section2Svg from '@/assets/about-us2.svg'
 import Section3Svg from '@/assets/about-us3.svg'
-import {FaInstagram} from "react-icons/fa"
-import {FaLinkedin} from "react-icons/fa"
-import {FaYoutube} from "react-icons/fa"
+import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa'
+import { Fragment } from 'react'
 
 export const Wrapper = Fragment
 
@@ -180,7 +178,7 @@ export const Container = styled.main`
       width: 100%;
 
       background: ${({ theme }) => theme.colors.white};
-      
+
       padding: 0 3rem;
       padding-top: 1.5rem;
       padding-bottom: 5rem;
@@ -188,7 +186,7 @@ export const Container = styled.main`
       display: flex;
       flex-direction: column;
       align-items: center;
-      `
+    `
 
     const Desktop = css`
       width: 100%;
@@ -267,21 +265,21 @@ export const Section = styled.section`
 
       margin: 0;
 
-      :first-child{
+      :first-child {
         padding-left: 0;
       }
 
-      :nth-of-type(3){
+      :nth-of-type(3) {
         flex-direction: row-reverse;
 
         text-align: right;
       }
 
-      :nth-child(1n + 3):not(:last-child){
+      :nth-child(1n + 3):not(:last-child) {
         margin-top: 5rem;
       }
 
-      :last-of-type{
+      :last-of-type {
         margin-top: 0.5rem;
       }
     `
@@ -447,7 +445,7 @@ export const button = styled.button`
       color: ${({ theme }) => theme.colors.white};
 
       background: ${({ theme }) => theme.colors.primary};
-      
+
       border: none;
       border-radius: 6.25rem;
     `
@@ -463,7 +461,7 @@ export const button = styled.button`
       color: ${({ theme }) => theme.colors.white};
 
       background: ${({ theme }) => theme.colors.primary};
-      
+
       border: none;
       border-radius: 6.25rem;
     `
@@ -481,18 +479,18 @@ export const Footer = styled.footer`
       padding-bottom: 1.5rem;
 
       border-top: solid 1px ${({ theme }) => theme.colors.grayLight};
-    
+
       background: ${({ theme }) => theme.colors.white};
 
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
       ${LogoImg} {
         width: 9.125rem;
       }
 
-      ${hr}{
+      ${hr} {
         width: 3.75rem;
 
         margin-top: 1rem;
@@ -514,7 +512,7 @@ export const Footer = styled.footer`
       background: ${({ theme }) => theme.colors.white};
 
       border-top: solid 1px ${({ theme }) => theme.colors.grayLight};
-    
+
       ${LogoImg} {
         width: 10.5rem;
       }
@@ -529,7 +527,7 @@ export const FooterPagesWrapper = styled.div`
     const Mobile = css`
       font-size: 1rem;
       color: ${({ theme }) => theme.colors.grayText};
-      
+
       display: flex;
       flex-direction: column;
 
@@ -547,7 +545,6 @@ export const FooterPagesWrapper = styled.div`
 
     return theme.isMobile ? Mobile : Desktop
   }}
-
 `
 
 export const FooterPages = styled.a`
@@ -557,11 +554,11 @@ export const FooterPages = styled.a`
       color: ${({ theme }) => theme.colors.grayText};
       text-align: center;
 
-      :first-of-type{
+      :first-of-type {
         margin-top: 1.375rem;
       }
 
-      & + &{
+      & + & {
         margin-top: 1rem;
       }
 
@@ -572,7 +569,6 @@ export const FooterPages = styled.a`
       font-size: 1rem;
       color: ${({ theme }) => theme.colors.grayText};
       cursor: pointer;
-
     `
 
     return theme.isMobile ? Mobile : Desktop
@@ -587,8 +583,7 @@ export const FooterPages = styled.a`
 
 export const FooterSocialMediasWrapper = styled.div`
   ${({ theme }) => {
-    const Mobile = css`
-    `
+    const Mobile = css``
 
     const Desktop = css`
       display: block;
@@ -659,7 +654,7 @@ export const InstaLogoImg = styled(FaInstagram)`
 
   transition: all 0.2s;
 
-  :hover{
+  :hover {
     fill: ${({ theme }) => theme.colors.primary};
   }
 `
@@ -685,7 +680,7 @@ export const LinkedinLogoImg = styled(FaLinkedin)`
 
   transition: all 0.2s;
 
-  :hover{
+  :hover {
     fill: ${({ theme }) => theme.colors.primary};
   }
 `
@@ -711,7 +706,7 @@ export const YoutubeLogoImg = styled(FaYoutube)`
 
   transition: all 0.2s;
 
-  :hover{
+  :hover {
     fill: ${({ theme }) => theme.colors.primary};
   }
 `
